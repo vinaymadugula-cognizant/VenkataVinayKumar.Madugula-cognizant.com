@@ -12,6 +12,7 @@
 <body>
 
 <h1>Your Profile</h1>
+<div>Instance number: <%= System.getenv("CF_INSTANCE_INDEX") %></div>
 <div>Username:</div>
 <div><%= session.getAttribute("username") %>
 </div>
